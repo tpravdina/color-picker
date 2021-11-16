@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Color Picker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You find it here: https://tpravdina-color-picker.s3.eu-central-1.amazonaws.com/index.html
 
 ## Available Scripts
 
