@@ -1,0 +1,37 @@
+.CopyButton {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 2px;
+  margin: 10px;
+  &__icon {
+    width: 20px;
+    height: 20px;
+    // mask: url('../../img/copy.png') no-repeat center / contain;
+    // -webkit-mask: url('../../img/copy.png') no-repeat center / contain;
+    // &:hover {
+    //   mask: url('../../img/copy-filled.png') no-repeat center / contain;
+    //   -webkit-mask: url('../../img/copy-filled.png') no-repeat center / contain;
+    //   // mask: url('../../img/done.png') no-repeat center / contain;
+    //   // -webkit-mask: url('../../img/done.png') no-repeat center / contain;
+    // }
+  }
+  &--copied {
+    .CopyButton__icon {
+      mask: url('../../img/done.png') no-repeat center / contain;
+      -webkit-mask: url('../../img/done.png') no-repeat center / contain;
+    }
+  }
+  &--uncopied {
+    .CopyButton__icon {
+      mask: url('../../img/copy.png') no-repeat center / contain;
+      -webkit-mask: url('../../img/copy.png') no-repeat center / contain;
+      &:hover {
+        mask: url('../../img/copy-filled.png') no-repeat center / contain;
+        -webkit-mask: url('../../img/copy-filled.png') no-repeat center / contain;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../media.scss';
+$color-height: 250px;
+$text-color: #4a4a4a;
+.ColorCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2vmin;
+  grid-row-gap: 1vmin;
+  justify-items: center;
+
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+
+  &:hover {
+    .ColorCard__copyButton {
+      display: grid;
+      place-items: center;
+    }
+  }
+  &__color {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    height: $color-height;
+    width: 100%;
+    margin: 2px;
+  }
+  &__name {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    cursor: default;
+  }
+  &__input {
+    opacity: 0;
+  }
+  &__copyButton {
+    display: none;
+    grid-row: 2;
+    grid-column-end: -1;
+    align-self: start;
+    justify-self: end;
+  }
+}
