@@ -9,5 +9,5 @@ In one color area you need to choose the color and another will display the near
 
 ## Technologies
 
-React
+React, TypeScript, SCSS
 
